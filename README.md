@@ -1,5 +1,5 @@
 # SimpleWorkShopSoftware
-This JavaFX desktop application is designed for professionals who need a simple, efficient tool to manage workshop-related tasks, focusing on essential operations like customer and car management, as well as work order creation.
+A lightweight, practical tool to simplify your everyday work. Manage customers, their cars, and associated work orders, without the distractions of unnecessary features.
 
 ## Basic usage
 
