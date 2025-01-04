@@ -62,4 +62,12 @@ This JavaFX desktop application is designed for professionals who need a simple,
 ![Update periods](https://github.com/attilaeckert/SimpleWorkShopSoftware/blob/main/scrnshots/Update%20periods%20popup.png) 
 ![Create Work order](https://github.com/attilaeckert/SimpleWorkShopSoftware/blob/main/scrnshots/Create%20Work%20order.png)
 
-### 6
+### 6. PDF creation
+- Return to the main menu, and when you select any type of work order, you can create a PDF from it using the upper button on the left.
+- On the text area above the buttons, a short version of the work order will appear.
+
+![Create PDF](https://github.com/attilaeckert/SimpleWorkShopSoftware/blob/main/scrnshots/Sample%20Pdf.png)
+
+- You can create a document for internal use in the workshop to document the vehicle's condition by selecting a request and clicking the lower button.
+
+![Create internal PDF](https://github.com/attilaeckert/SimpleWorkShopSoftware/blob/main/scrnshots/Condition%20Pdf.png)
