@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simpleworkshopsoftware.controller.CustomerController">
+   <children>
+      <AnchorPane layoutX="499.0" minHeight="620.0" minWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="78.4" prefHeight="500.0" prefWidth="200.0" spacing="5.0" AnchorPane.topAnchor="90.0">
+               <children>
+                  <Label text="Márka" textFill="WHITE" />
+                  <TextField fx:id="brandTf" />
+                  <Label text="Típus" textFill="WHITE" />
+                  <TextField fx:id="modelTf" />
+                  <Label text="Alvázszám" textFill="WHITE" />
+                  <TextField fx:id="vinTf" />
+                  <Label text="Motorkód" textFill="WHITE" />
+                  <TextField fx:id="engineTf" />
+                  <Label text="Évjárat" textFill="WHITE" />
+                  <TextField fx:id="yearTf" promptText="éééé" />
+                  <Label text="Rendszám" textFill="WHITE" />
+                  <TextField fx:id="licenseTf" />
+                  <Label text="Műszaki érvényessége" textFill="WHITE" />
+                  <TextField fx:id="licensevalTf" promptText="éééé-hh-nn" />
+                  <Label text="Km-óra állása" textFill="WHITE" />
+                  <TextField fx:id="kmTf" promptText="Pl: 111111" />
+                  <Label text="Üzemanyag" textFill="WHITE" />
+                  <ChoiceBox fx:id="fuelTypeChoice" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <Label layoutX="106.0" layoutY="26.0" text="Autó" textFill="WHITE" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="420.0" minWidth="250.0" prefHeight="420.0" prefWidth="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="personModVbox" alignment="TOP_CENTER" layoutX="25.0" layoutY="148.0" prefHeight="270.0" prefWidth="200.0" spacing="5.0" visible="false" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="145.0">
+               <children>
+                  <Label text="Vezetéknév" textFill="WHITE" />
+                  <TextField fx:id="lastNameTf" />
+                  <Label text="Keresztnév" textFill="WHITE" />
+                  <TextField fx:id="firstNameTf" />
+                  <Label text="Cím" textFill="WHITE" />
+                  <TextField fx:id="addressTf" />
+                  <Label text="Telefon" textFill="WHITE" />
+                  <TextField fx:id="phoneTf" promptText="+36301234567 vagy 06301234567" />
+                  <Label text="Email" textFill="WHITE" />
+                  <TextField fx:id="emailTf" />
+               </children>
+            </VBox>
+            <ChoiceBox fx:id="customerTypeChoice" layoutX="31.0" layoutY="115.0" prefHeight="25.0" prefWidth="187.0" AnchorPane.topAnchor="112.0" />
+            <Label layoutX="99.0" layoutY="54.0" text="Ügyfél" textFill="WHITE" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox fx:id="companyModVbox" alignment="TOP_CENTER" layoutX="25.0" layoutY="100.0" prefHeight="270.0" prefWidth="200.0" spacing="5.0" visible="false" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="145.0">
+               <children>
+                  <Label text="Cégnév" textFill="WHITE" />
+                  <TextField fx:id="compNameTf" />
+                  <Label text="Cím" textFill="WHITE" />
+                  <TextField fx:id="compAddressTf" />
+                  <Label text="Telefon" textFill="WHITE" />
+                  <TextField fx:id="compPhoneTf" promptText="+36301234567 vagy 06301234567" />
+                  <Label text="Email" textFill="WHITE" />
+                  <TextField fx:id="compEmailTf" />
+                  <Label text="Adószám" textFill="WHITE" />
+                  <TextField fx:id="compTaxNumTf" />
+               </children>
+            </VBox>
+            <Label layoutX="71.0" layoutY="90.0" text="Válassz ügyfél típust" textFill="WHITE" AnchorPane.topAnchor="90.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="250.0" minHeight="620.0" minWidth="250.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="93.0" layoutY="98.0" text="Ügyfél autói" textFill="WHITE" AnchorPane.topAnchor="90.0" />
+            <ListView fx:id="customerCarListView" layoutX="25.0" layoutY="115.0" prefHeight="285.0" prefWidth="200.0" AnchorPane.topAnchor="115.0" />
+            <VBox alignment="CENTER" layoutY="393.0" prefHeight="190.0" prefWidth="250.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="430.0">
+               <children>
+                  <Button fx:id="newCarButton" minHeight="26.0" minWidth="125.0" mnemonicParsing="false" onAction="#onNewCarButtonClick" text="Új autó felvétele" />
+                  <Button fx:id="modifyCarButton" minHeight="26.0" minWidth="125.0" mnemonicParsing="false" onAction="#onModifyCarButtonClick" text="Módosítás" />
+                  <Button fx:id="deleteCarButton" minHeight="26.0" minWidth="125.0" mnemonicParsing="false" onAction="#onDeleteCarButtonClick" text="Autó törlése" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <VBox alignment="CENTER" layoutX="64.0" layoutY="416.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="250.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="430.0">
+         <children>
+            <Button fx:id="newCustomerButton" minHeight="26.0" minWidth="125.0" mnemonicParsing="false" onAction="#onNewCustomerButtonClick" text="Új ügyfél felvétele" />
+            <Button fx:id="modifyCustomerButton" minHeight="26.0" minWidth="125.0" mnemonicParsing="false" onAction="#onModifyCustomerButtonClick" text="Módosítás" />
+            <Button fx:id="deleteCustomerButton" layoutX="72.0" layoutY="111.0" minHeight="26.0" minWidth="125.0" mnemonicParsing="false" onAction="#onDeleteCustomerButtonClick" text="Ügyfél törlése" />
+         </children>
+      </VBox>
+      <Separator minWidth="750.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

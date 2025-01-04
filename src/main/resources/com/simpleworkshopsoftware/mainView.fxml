@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #768f9b 0.0%, #4b5961 0.6729%, #676c70 62.3822%, #585a5b 100.0%);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simpleworkshopsoftware.controller.MainController">
+   <left>
+      <AnchorPane minHeight="624.0" minWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <FontIcon iconLiteral="bxs-car-mechanic" iconSize="36" layoutX="82.0" layoutY="64.0" />
+            <VBox alignment="CENTER" layoutY="85.0" prefHeight="201.0" prefWidth="196.0" spacing="15.0" AnchorPane.bottomAnchor="340.0">
+               <children>
+                  <Button fx:id="mainButton" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" onAction="#onMainButtonClick" style="-fx-background-color: #4b5961; -fx-border-color: gray; -fx-border-radius: 5; -fx-border-width: 2;" text="Főmenü">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconLiteral="bxs-cog" iconSize="18" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="customerButton" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" onAction="#onCustomerButtonClick" style="-fx-background-color: #4b5961; -fx-border-color: gray; -fx-border-radius: 5; -fx-border-width: 2;" text="Ügyfél kezelés">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconLiteral="bxs-user" iconSize="18" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="workOrderButton" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" onAction="#onWorkOrderButtonClick" style="-fx-background-color: #4b5961; -fx-border-color: gray; -fx-border-radius: 5; -fx-border-width: 2;" text="Munkalap">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconLiteral="bxs-archive" iconSize="18" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="settingsButton" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" onAction="#onSettingsButtonClick" style="-fx-background-color: #4b5961; -fx-border-color: gray; -fx-border-radius: 5; -fx-border-width: 2;" text="Beállítások">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconLiteral="bxs-book-content" iconSize="18" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <Separator layoutX="194.0" layoutY="-26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="650.0" prefWidth="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-26.0" />
+            <AnchorPane layoutX="-2.0" layoutY="365.0" prefHeight="300.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0">
+               <children>
+                  <PieChart fx:id="pieChart" layoutX="-150.0" layoutY="-100.0" prefHeight="300.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <HBox alignment="CENTER_LEFT" minHeight="26.0" minWidth="750.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="unselectButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onUnselectButtonClick" prefHeight="26.0" prefWidth="115.0" text="Kiválasztás törlése">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+            <Label fx:id="customerDisplayLabel" alignment="CENTER" minHeight="26.0" minWidth="220.0" textFill="LIGHTGRAY">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="carDisplayLabel" alignment="CENTER" contentDisplay="CENTER" minHeight="26.0" minWidth="220.0" textAlignment="CENTER" textFill="LIGHTGRAY">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="workOrderDisplayLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="450.0" layoutY="10.0" minHeight="26.0" minWidth="200.0" prefHeight="26.0" textAlignment="CENTER" textFill="LIGHTGRAY">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="199.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+</BorderPane>

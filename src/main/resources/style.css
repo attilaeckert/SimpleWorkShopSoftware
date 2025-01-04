@@ -1,0 +1,22 @@
+.grid-pane {
+ -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #768f9b 0.0%, #4b5961 0.0%, #676c70 60.0%, #585a5b 100.0%);
+}
+.grid-pane .label {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+}
+.default-color0.chart-pie { -fx-pie-color: #4f8c32;
+}
+.default-color1.chart-pie { -fx-pie-color: #aa320a;
+}
+}
+.default-color2.chart-pie { -fx-pie-color: #4f8c32;
+}
+.default-color3.chart-pie { -fx-pie-color: #aa320a;
+}
+}
+.default-color4.chart-pie { -fx-pie-color: #4f8c32;
+}
+.default-color5.chart-pie { -fx-pie-color: #aa320a;
+}
+
