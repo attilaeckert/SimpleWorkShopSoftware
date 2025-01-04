@@ -71,3 +71,7 @@ A lightweight, practical tool to simplify your everyday work. Manage customers, 
 - You can create a document for internal use in the workshop to document the vehicle's condition by selecting a request and clicking the lower button.
 
 ![Create internal PDF](https://github.com/attilaeckert/SimpleWorkShopSoftware/blob/main/scrnshots/Condition%20Pdf.png)
+
+#### License
+
+[GNU License](LICENSE)
