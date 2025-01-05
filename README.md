@@ -1,6 +1,8 @@
 # SimpleWorkShopSoftware
 A lightweight, practical tool to simplify your everyday work. Manage customers, their cars, and associated work orders, without the distractions of unnecessary features.
 
+![Download](https://github.com/attilaeckert/SimpleWorkShopSoftware/releases/tag/v1.0.0)
+
 ## Basic usage
 
 ### 1. First start
