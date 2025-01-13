@@ -6,7 +6,7 @@ A lightweight, practical tool to simplify your everyday work. Manage customers, 
 ## Basic usage
 
 ### 1. First start
-- A popup window shows up with a warning message stating that the configuration file doesn't exist yet, you need to create it.
+- A popup window shows up with a warning message stating that the configuration file doesn't exist yet, so it creates a default one, you just need to modify it.
 - After confirmation, another window asks you to choose the path where the database will be saved.
 - After that, you can choose a path where the program will save the generated PDF of work orders.
 - Then the application starts in the main menu, showing two tables, and the table related to car-work order information on the right side.
@@ -20,6 +20,7 @@ A lightweight, practical tool to simplify your everyday work. Manage customers, 
 - You can change the database and work order saving folders anytime here.
 - In the upper right text area, type custom text that will appear in the generated PDF's footer section.
 - Below, you can choose a logo to appear in the generated PDF's header.
+- After all, restart the program.
 
 ![Settings](https://github.com/attilaeckert/SimpleWorkShopSoftware/blob/main/scrnshots/Settings.png)
 

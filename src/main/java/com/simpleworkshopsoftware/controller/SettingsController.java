@@ -176,13 +176,12 @@ public class SettingsController implements Initializable {
                     if (imageFile.exists()) {
                         Files.delete(imageFile.toPath());
                     }
+                    PopupWindowsController.showDialog("A beállítások sikeresen vissza lettek állítva, kérlek indítsd újra az alkalmazást!",
+                            PopupWindowsController.DialogType.INFORMATION);
                 }
         } catch (IOException e) {
             PopupWindowsController.showDialog("Nem sikerült visszaállítani a beállításokat", PopupWindowsController.DialogType.WARNING);
-            return;
         }
-        PopupWindowsController.showDialog("A beállítások sikeresen vissza lettek állítva, kérlek indítsd újra az alkalmazást!",
-                PopupWindowsController.DialogType.INFORMATION);
     }
 
     @FXML

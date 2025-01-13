@@ -111,7 +111,7 @@ public class ConfigManager {
         try (Writer writer = new FileWriter(configFilePath)) {
             if (config instanceof PropertiesConfiguration) {
                 ((PropertiesConfiguration) config).write(writer);
-                PopupWindowsController.showDialog("Sikeres mentés a konfigurációs fájlba",
+                PopupWindowsController.showDialog("Sikeres mentés a konfigurációs fájlba, kérlek indítsd újra az alkalmazást!",
                         DialogType.INFORMATION);
             }
         } catch (ConfigurationException | IOException e) {
